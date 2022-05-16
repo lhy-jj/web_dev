@@ -1,0 +1,84 @@
+h2:hover {
+    color: red;
+}
+
+/* .subtitle {
+    color: blue;
+} */
+
+h2[class=subtitle] {
+    color: blue
+}
+
+#services {
+    color: green;
+}
+
+/* inline > id > class > header */
+
+li:nth-child(2) {  
+    color: steelblue;
+}
+
+td:only-child {
+    color: yellowgreen;
+}
+
+/* #google-link:link {
+    color: blue;
+}
+
+#google-link:visited {
+    color: red;
+} */
+
+/* : pseudoselector */
+
+h2 + a {
+    color: darkcyan;
+}
+/* only need follow */
+textarea ~ button {
+    color: purple
+}
+/* share the same parent */
+
+ul > li {
+    color: blue;
+}
+/* every li inside ul, any direct child*/
+
+ul li {
+    color: green;
+}
+/* contain in ul, then li color is applied */
+
+img[src^="../html/img/"] {
+    width: 200px;
+}
+/* start with .. */
+
+img[src$="../html/img/"] {
+    width: 200px;
+}
+/* end with */
+
+img[src*="../html/img/"] {
+    width: 200px;
+}
+/* anywhere */
+
+h2[class~=article-subtitle] {
+    background: lightpink;
+}
+/* contain a certain class */
+
+h2[class|=article-subtitle] {
+    background: lightpink;
+}
+
+/* 
+subtitle-20935
+subtitle-24523
+
+*/ 
